@@ -1,12 +1,6 @@
 const path = require("path")
 const fs = require("fs")
 
-// All functionalities here should be syncronouse!
-
-// Write a syncronouse function called allFilesInPath(path) that takes a path and returns the names (not the path)
-// all the files (not Directories) in each of its sub directories - Do not make it recursive
-// The path given can both be absolute and relative
-
 
 function allFilesInOnefolder (dirPath){
     return  fs.readdirSync(dirPath).filter( (name) => !fs.lstatSync(path.join(dirPath,name)).isDirectory() )
@@ -27,8 +21,6 @@ module.exports.allFilesInPath = function  (dirPath){
 }
 
 
-// Write a syncronouse function called deleteAllFiles(fileType) that deletes all files that end with the given filetype.
-// If a directory is present it should try to delete all the files in the subdirectory aswell - Do not make it recursive
 
 
 function deleteallFilesInOnefolder (dirPath){
@@ -53,8 +45,6 @@ module.exports.deleteAllFiles = function  (dirPath){
     return fileList
 }
 
-// Write a syncronouse function called deleteAllFileslike(fileType) that deletes all files that end with the given filetype.
-// If a directory is present it should try to delete all the files in the subdirectory aswell - Do not make it recursive
 
 function deleteallFilesInOnefolderConditional (dirPath, condition){
     return  fs.readdirSync(dirPath).map( (name) =>{
@@ -81,9 +71,7 @@ module.exports.deleteAllFileslike = function  (dirPath, condition){
 }
 
 
-// Write a syncronouse function called mkFileIn("data" , ...listOfFolders) that creates a file with the given data.
-// The file name should be the last element in listOfFolders.
-// The element in listOfFOlders should describe a path relative to the location of the file containing such functionality - Do not make it recursive
+
 
 module.exports.mkFileIn = function (data, ...list){
     let last = list.slice(-1)[0]
