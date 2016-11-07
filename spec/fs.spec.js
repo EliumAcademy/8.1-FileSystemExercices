@@ -175,7 +175,7 @@ describe( "allFilesInPath",  function() {
         })
     })
 
-    it( "should delete all files", function(){
+    it( "show all files in directory", function(){
         foundFileNames = exercise.allFilesInPath("deleteAllLike").sort()
         const glob = require("glob")
         allFileNames = [].concat.apply([], glob.sync("deleteAllLike/*/*.*").concat(glob.sync("deleteAllLike/*.*"))).map((pathName) => path.basename(pathName)).sort()
