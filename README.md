@@ -8,8 +8,12 @@
 
 4. Write a syncronouse function called mkFileIn("data" , ...listOfFolders) that creates a file with the given data. The file name should be the last element in listOfFolders. The element in listOfFOlders should describe a path relative to the location of the file containing such functionality - Do not make it recursive
 
+
 ##NOTES
 
 All functionalities here should be syncronous!
 
+
+##To Start
+Run __npm install__ in your console.
 
