@@ -4,9 +4,9 @@
 
 2. Write a syncronouse function called allFilesInPath(path) that takes a path and returns the names (not the path) all the files (not Directories) in each of its sub directories - Do not make it recursive. The path given can both be absolute and relative
 
-3. Write a syncronouse function called deleteAllFiles(fileType) that deletes all files that end with the given filetype. If a directory is present it should try to delete all the files in the subdirectory aswell - Do not make it recursive.
+3. Write a syncronouse function called deleteAllFiles(directory) that deletes (not directories) all files in a given directory. If a directory is present it should try to delete all the files in the subdirectory as well - Do not make it recursive.
 
-4. Write a syncronouse function called deleteAllFileslike(fileType) that deletes all files that end with the given filetype. If a directory is present it should try to delete all the files in the subdirectory aswell - Do not make it recursive
+4. Write a syncronouse function called deleteAllFileslike(directory, fileType) that deletes all files (not directories) that end with the given filetype in the given directory. If a directories are present it should try to delete all the files in the subdirectories as well - Do not make it recursive
 
 
 ##NOTES
